@@ -1,0 +1,293 @@
+
+body {
+    font-family: "Poppins" , sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    color:white;
+    text-shadow: 0px 0px 10px white,
+    0px 0px 20px white;
+    background-color:  #100720;
+    flex-wrap: wrap;
+}
+
+/* Estilos para el encabezado */
+header {
+   height: 40px;
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   background: radial-gradient(circle farthest-corner at 10% 20%, rgba(35, 17, 196,1) 17.8%, rgba(2,245,255,1)100.2%);  
+}
+.contac{
+   display: flex;
+   align-items: end;
+   justify-content: center ;
+   margin-left: 600px;
+   font-size: x-large;
+   height: 65px; 
+ }
+/* Video */
+#videoback{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -1;
+}
+
+/* Estilos para la navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    transition: transform 1s;
+    color:white
+}
+nav ul li:hover{
+    transform: scale(1.1, 1.1);
+}
+nav ul:hover > li:not(:hover){
+    filter: blur(3px);
+    transform: scale(0.9, 0.9);
+    
+}
+
+nav ul li {
+    margin-right: 20px;
+   ;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: x-large  ;
+}
+/* Estilos para los iconos de redes sociales */
+.social-media a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 1s;
+
+
+}
+.social-media a img:hover{
+    transform: scale(1.3);
+}
+/* Proyectos de Diseño */
+.container{
+    display: flex   ;
+    flex-wrap: wrap;
+    align-items:stretch;
+    text-align: justify;
+    width: 95%;
+    height: 300px;
+  /*   border: solid 5px; */
+    margin-left: 50px ;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
+a{
+    text-decoration: none;
+    
+}
+h2{
+    margin: 10px;
+    text-align: center;
+    margin-top: 100px;
+    padding: 10px;
+    color: #fff;
+    animation: blob-bounce 2s normal ease; 
+   }
+   @keyframes blob-bounce{
+     0% {
+       transform: translate(+100%, -100%) translate3d(0, 0, 0);
+     }
+   }
+
+
+h4{
+   margin: 10px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    color: #fff;
+    animation: blob-bounce 5s normal ease; 
+}
+@keyframes blob-bounce{
+  0% {
+    transform: translate(+100%, -100%) translate3d(0, 0, 0);
+  }
+}
+.caja{
+    width: 5%;
+    margin-bottom: 75px;
+    display: grid;
+    
+    flex-direction: wrap;
+    margin-right: 90px;
+    
+}
+
+   .ao{
+    display: grid; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    margin: 20px;
+    width: 100px;
+    height: 62px;
+    cursor: pointer;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: absolute;
+    background: #100720;
+    transition: 0.1s;
+  } 
+  .ao::after{
+   /*  content: url(../Subpaginas/contacto.html); */
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247  ,1) 17.8%, rgba(2,245,255,1)100.2%);
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+  } 
+  .ao:active {
+    transform: scale(0.9) rotate(1deg);
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255,94,247,1) 17.8%, rgb(2,245,255,1)100.2%);
+    transition: 0.1s;
+  }
+
+ .contenido-desplegable {
+    display: none;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 50px;
+    transition: 2s ease;
+  
+   
+ }
+ .contenido-desplegable:hover{
+    transform: scale(0.8);
+   
+ }
+ :target{
+    display: block;
+    transition:  2s ease;
+ }
+ .cafe{
+    width: 90%;
+    height: 60%;
+    margin-left: 30px;
+    transition: 2s ease;
+ }
+
+ .caja2{
+    display: none;
+    justify-content: space-between;
+    text-align: center; 
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+    transition: 2s ease;
+ }
+ .caja2:hover{
+    transform: scale(0.8);
+ }
+ #Landin:target{
+    display: block;  
+ }
+ .caja3{
+
+     display: none;
+     justify-content: flex-start;
+     margin-bottom: 10px;
+     margin-top: 10px;
+     margin-left: 50px;
+     text-align: center;
+     transition: 2s ease;
+ }
+ .caja3:hover{
+    transform: scale(0.8);
+ }
+ #tuto:target{
+    display: block;
+ }
+ .caja4{
+    display: none;
+     justify-content: space-between;
+     margin-bottom: 10px;
+     margin-top: 10px;
+     margin-left: 50px;
+     text-align: center;
+     transition: 2s ease;
+ }
+ .caja4:hover{
+    transform: scale(0.8);
+ }
+ #precios:target{
+    display: block;
+ }
+ .caja5{
+    display: none;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+    text-align: center;
+    transition: 2s ease;
+ }
+ .caja5:hover{
+    transform: scale(0.8);
+ }
+ #diseño:target{
+    display: block;
+ }
+ .caja6{
+   display: none;
+   justify-content: space-between;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   margin-left: 50px;
+   text-align: center;
+   transition: 2s ease;
+}
+.caja6:hover{
+   transform: scale(0.8);
+}
+#web:target{
+   display: block;
+}
+
+
+   
+
+
+footer {
+  
+  margin-top: 600px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: radial-gradient(circle farthest-corner at 10% 20%, rgba(35, 17, 196,1) 17.8%, rgba(2,245,255,1)100.2%);
+}
+@media (max-width: 700px ){
+   body{
+       flex-direction: column;
+   }
+   
+   
+}
